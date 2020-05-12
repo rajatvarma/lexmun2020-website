@@ -1,0 +1,100 @@
+:root{
+    --plaintext: #E8EDDF;
+    --background: #000000;
+    --primary: #F5CB5C;
+    --secondary: #444644;
+    --tertiary: #CFDBD5;
+}
+
+html,body {
+    background-color: var(--background);
+    font-family: 'Raleway';
+    color: var(--plaintext);
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: relative;
+    background-color: var(--secondary);
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#navbar .nav-wrapper{
+    position: relative;
+}
+
+#navbar .nav-wrapper a {
+    padding: 20px;
+    color: var(--tertiary);
+    text-decoration: none;
+    transition: 0.2s;
+    margin: 0px;
+}
+
+#navbar .nav-wrapper a:hover {
+    background-color: var(--background); 
+    transition: 0.2s;  
+}
+
+.landing {
+    font-size: 1.5rem;
+    color: var(--plaintext);
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    min-height: 100%;
+    top: 5%;
+    height: 100%;
+    left: 2%;
+}
+
+.landing-wrapper{
+    display: block;
+}
+
+.landing h1, h3{
+    text-align: center;
+}
+
+.landing .collections {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.landing .collections *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.landing .collections .photo {
+    right: 0%;
+    display: inline-block;
+    margin-left: 40%;
+}
+
+.landing .collections .photo img {
+    width: 400px;
+    height: 400px;
+}
+
+.about {
+    color: var(--plaintext);
+    margin-top: 10%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about h1{
+    color: var(--primary);
+}
