@@ -55,6 +55,7 @@ html,body {
     top: 5%;
     height: 100%;
     left: 2%;
+    right: 2%;
 }
 
 .landing-wrapper{
@@ -76,10 +77,14 @@ html,body {
     vertical-align: middle;
 }
 
+.landing .collections h1 {
+    margin-left: 10%;
+}
+
 .landing .collections .photo {
     right: 0%;
     display: inline-block;
-    margin-left: 40%;
+    margin-left: 30%;
 }
 
 .landing .collections .photo img {
@@ -89,12 +94,158 @@ html,body {
 
 .about {
     color: var(--plaintext);
-    margin-top: 10%;
+    margin-top: 5%;
     height: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
 }
 
 .about h1{
     color: var(--primary);
 }
+
+.footer {
+    background-color: var(--primary);
+    padding: 20px;
+    color: var(--secondary);
+}
+
+.footer .links {
+    display: inline-block;
+    padding: 25px;
+    right: 0;
+    margin-left: auto;
+    float: right;
+}
+
+.footer .links img{
+    padding: 5px;
+}
+
+.footer .footer-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 25px;
+}
+
+
+.container h3{
+    text-align: left;
+    font-size: 1em;
+}
+
+.card-wrapper{
+    border: var(--secondary) 1px solid;
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+.card-wrapper .card-title, .desc, h3 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.card-wrapper .picture {
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
+
+    .landing{
+        font-size: 1.25rem;
+        left: 0;
+    }
+
+    .landing-wrapper{
+        display: block;
+        padding: 20px;
+    }
+    
+    .landing h1, h3{
+        text-align: center;
+        margin: 0;
+    }
+    
+    .landing .collections .collection-amount{
+        margin: 0
+    }
+
+    .landing .collections {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .landing .collections *{
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .landing .collections h1 {
+        margin-left: 0%;
+    }
+
+    .landing .collections .photo{
+        margin: 0;
+    }
+
+    .landing .collections .photo img {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    .footer .links img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .footer .links {
+        padding: 25px;
+        right: 0;
+        margin-left: auto;
+    }
+    
+    .footer .footer-text {
+        vertical-align: middle;
+        padding: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
