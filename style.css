@@ -58,12 +58,13 @@ html,body {
     right: 2%;
 }
 
-.landing-wrapper{
-    display: block;
-}
-
 .landing h1, h3{
     text-align: center;
+    padding: 10px;
+}
+
+.landing-wrapper{
+    display: block;
 }
 
 .landing .collections {
