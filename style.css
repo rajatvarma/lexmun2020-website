@@ -66,6 +66,20 @@ html,body {
     display: block;
 }
 
+
+#myProgress {
+    display: inline-block;
+    width: 40%;
+    margin-left: 30%;
+    background-color: var(--secondary);
+  }
+  
+  #myBar {
+    display: inline-block;
+    height: 30px;
+    background-color: var(--primary);
+  }
+
 .landing .collections {
     display: block;
     height: 100%;
@@ -73,21 +87,30 @@ html,body {
 }
 
 .landing .collections *{
-    display: inline-block;
     vertical-align: middle;
 }
 
-.landing .collections h1 {
-    margin-left: 10%;
+.landing .collections span {
+    color: var(--primary);
 }
 
-.landing .collections .photo {
-    right: 0%;
+.landing .collections h1{
+    text-align: center;
+    margin: 0;
+}
+
+.landing .collections h5 {
+    text-align: center;
+    margin: 0;
+}
+
+.landing .photo {
     display: inline-block;
-    margin-left: 30%;
+    width: 50%;
+    margin: 5% 35%;
 }
 
-.landing .collections .photo img {
+.landing .photo img {
     width: 400px;
     height: 400px;
 }
@@ -227,20 +250,20 @@ html,body {
         text-align: center;
     }
     
-    .landing .collections *{
+    .landing .collections * {
         vertical-align: middle;
-        text-align: center;
     }
     
-    .landing .collections h1 {
+    .landing .collections h1, h5 {
         margin-left: 0%;
+        text-align: center;
     }
 
-    .landing .collections .photo{
-        margin: 0;
+    .landing .photo{
+        margin: 5% 23%;
     }
 
-    .landing .collections .photo img {
+    .landing .photo img {
         width: 200px;
         height: 200px;
         display: block;
@@ -289,6 +312,18 @@ html,body {
         display: block;
         margin: 0;
     }
+
+    #myProgress {
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+        margin-left: 0%;
+        background-color: var(--secondary);
+      }
+      
+      #myBar {
+        height: 30px;
+        background-color: var(--primary);
 }
 
 
