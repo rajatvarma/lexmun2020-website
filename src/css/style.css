@@ -1,0 +1,336 @@
+:root{
+    --plaintext: #E8EDDF;
+    --background: #000000;
+    --primary: #B28D15;
+    --secondary: #CFDBD5;
+}
+
+html,body {
+    background-color: var(--background);
+    font-family: 'Raleway';
+    color: var(--plaintext);
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: relative;
+    background-color: var(--primary);
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#navbar .nav-wrapper{
+    position: relative;
+}
+
+#navbar .nav-wrapper a {
+    padding: 20px;
+    color: var(--secondary);
+    text-decoration: none;
+    transition: 0.2s;
+    margin: 0px;
+}
+
+#navbar .nav-wrapper a:hover {
+    background-color: var(--background); 
+    transition: 0.2s;  
+}
+
+.landing {
+    font-size: 1.5rem;
+    color: var(--plaintext);
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    min-height: 100%;
+    top: 5%;
+    height: 100%;
+    left: 2%;
+    right: 2%;
+}
+
+.landing h1, h3{
+    text-align: center;
+    padding: 10px;
+}
+
+.landing-wrapper{
+    display: block;
+}
+
+
+#myProgress {
+    display: inline-block;
+    width: 40%;
+    margin-left: 30%;
+    background-color: var(--secondary);
+  }
+  
+  #myBar {
+    display: inline-block;
+    height: 30px;
+    background-color: var(--primary);
+  }
+
+.landing .collections {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.landing .collections *{
+    vertical-align: middle;
+}
+
+.landing .collections span {
+    color: var(--primary);
+}
+
+.landing .collections h1{
+    text-align: center;
+    margin: 0;
+}
+
+.landing .collections h5 {
+    text-align: center;
+    margin: 0;
+}
+
+.landing .photo {
+    display: inline-block;
+    width: 50%;
+    margin: 5% 35%;
+}
+
+.landing .photo img {
+    width: 400px;
+    height: 400px;
+}
+
+.about {
+    color: var(--plaintext);
+    margin-top: 5%;
+    text-align: left;
+    height: 100%;
+    padding: 5%;
+}
+
+.about h1{
+    color: var(--primary);
+}
+
+.footer {
+    background-color: var(--primary);
+    padding: 10px;
+    color: var(--secondary);
+}
+
+.about p {
+    text-align: left;
+}
+
+.footer .links {
+    display: inline-block;
+    padding: 25px;
+    right: 0;
+    margin-left: auto;
+    float: right;
+}
+
+.footer .links img{
+    padding: 5px;
+}
+
+.footer .footer-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+
+.container h3{
+    font-size: 1em;
+}
+
+.card-wrapper{
+    border: var(--secondary) 1px solid;
+    text-align: center;
+    padding: 2%;
+    margin: 5% 10%;
+    
+}
+
+.card-heading {
+    text-align: center;
+}
+
+.card-wrapper .card-title h3, p {
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+}
+
+
+.card-wrapper .picture {
+    display: block;
+    margin: 0;
+}
+
+.card-wrapper .picture img {
+    width: 400px;
+    height: 400px;
+}
+
+.inner-card {
+    border: 0.5px solid;
+    display: inline-block;
+    padding: 2%;
+    margin: 2%;
+}
+
+.inner-card img {
+    height: 250px;
+    width: 250px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        top: 0;
+        left: 0;
+        margin: 0;
+        position: relative;
+        background-color: var(--primary);
+        display: inline-block;
+        font-size: 0.62rem;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    #navbar .nav-wrapper{
+        position: relative;
+    }
+    
+    #navbar .nav-wrapper a {
+        padding: 10px;
+        color: var(--secondary);
+        text-decoration: none;
+        transition: 0.2s;
+        margin: 0px;
+    }
+
+    .landing{
+        font-size: 1.25rem;
+        left: 0;
+    }
+
+    .landing-wrapper{
+        display: block;
+        padding: 20px;
+    }
+    
+    .landing h1, h3{
+        text-align: center;
+        margin: 0;
+    }
+    
+    .landing .collections .collection-amount{
+        margin: 0
+    }
+
+    .landing .collections {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .landing .collections * {
+        vertical-align: middle;
+    }
+    
+    .landing .collections h1, h5 {
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .landing .photo{
+        margin: 5% 23%;
+    }
+
+    .landing .photo img {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    .footer .links img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .footer .links {
+        padding: 25px;
+        right: 0;
+        margin-left: auto;
+    }
+    
+    .footer .footer-text {
+        vertical-align: middle;
+        padding: 25px;
+    }
+
+    .card-wrapper .card-title h3, p {
+        text-align: center;
+        margin: 0;
+        vertical-align: middle;
+    }
+    
+    .card-wrapper {
+        margin: 2% 5%;
+    }
+
+    #myProgress {
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+        margin-left: 0%;
+        background-color: var(--secondary);
+      }
+      
+    #myBar {
+        height: 30px;
+        background-color: var(--primary);
+      }
+
+    .inner-card {
+        border: 0.5px solid;
+        display: inline-block;
+        padding: 2%;
+        margin: 1%;
+    }
+    
+    .inner-card img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .card-wrapper .picture img{
+        height: 200px;
+        width: 200px;
+    }
+}
