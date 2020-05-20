@@ -62,7 +62,7 @@ html,body {
     padding: 10px;
 }
 
-.landing-wrapper{
+.landing-wrapper {
     display: block;
 }
 
@@ -105,9 +105,8 @@ html,body {
 }
 
 .landing .photo {
-    display: inline-block;
-    width: 50%;
-    margin: 5% 35%;
+    text-align: center;
+    margin: 5% auto;
 }
 
 .landing .photo img {
@@ -125,6 +124,18 @@ html,body {
 
 .about h1{
     color: var(--primary);
+}
+
+.about h3 {
+    text-align: left;
+}
+
+.button {
+    background-color: var(--primary);
+    color: var(--plaintext);
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .footer {
