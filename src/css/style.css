@@ -196,6 +196,10 @@ html,body {
     margin: 2%;
 }
 
+.inner-card h5, h6 {
+    margin: 5%;
+}
+
 .inner-card img {
     height: 250px;
     width: 250px;
