@@ -285,12 +285,12 @@ html,body {
 
     .landing .photo{
         margin: 5% auto;
+        text-align: center;
     }
 
     .landing .photo img {
         width: 200px;
         height: 200px;
-        display: block;
     }
 
     .footer .links img {
