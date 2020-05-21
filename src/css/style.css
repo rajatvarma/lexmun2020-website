@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root{
     --plaintext: #E8EDDF;
     --background: #000000;
@@ -7,7 +9,7 @@
 
 html,body {
     background-color: var(--background);
-    font-family: 'Raleway';
+    font-family: 'Poppins';
     color: var(--plaintext);
     margin: 0;
     max-width: 100%;
@@ -207,7 +209,13 @@ html,body {
     margin: 2%;
 }
 
-.inner-card h5, h6 {
+.inner-card h5 {
+    font-weight: 600;;
+    margin: 5%;
+}
+
+.inner-card h6 {
+    font-weight: 500;
     margin: 5%;
 }
 
