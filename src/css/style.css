@@ -212,6 +212,7 @@ html,body {
 .inner-card img {
     height: 250px;
     width: 250px;
+    /*filter: grayscale();*/
 }
 
 
