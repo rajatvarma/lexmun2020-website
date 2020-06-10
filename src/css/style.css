@@ -116,18 +116,20 @@ body {
 }
 
 .about {
-    color: var(--plaintext);
-    text-align: left;
-    height: 100%;
+    font-size: 1rem;
     padding: 1% 5%;
-}
-
-.about h1{
-    color: var(--primary);
-}
-
-.about h3 {
     text-align: left;
+}
+
+div.about {
+    margin-bottom: 30px;
+}
+
+.landing h1.about {
+    padding: 1% 5%;
+    color: var(--primary);
+    text-align: left;
+    font-size: 1.25rem;
 }
 
 .button {
@@ -135,7 +137,9 @@ body {
     color: var(--plaintext);
     font-weight: bold;
     padding: 10px;
+    font-size: 1rem;
     text-decoration: none;
+    margin: 1% 5%;
 }
 
 .footer {
@@ -146,10 +150,6 @@ body {
     bottom: 0;
     position: absolute;
     width: 100%;
-}
-
-.about p {
-    text-align: left;
 }
 
 .footer .links {
@@ -259,7 +259,7 @@ body {
         margin: 0px;
     }
 
-    .landing{
+    .landing {
         font-size: 1.25rem;
         left: 0;
         margin: 5% 0 20% 0;
