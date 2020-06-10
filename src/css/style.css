@@ -7,7 +7,7 @@
     --secondary: rgb(207, 219, 213);
 }
 
-html,body {
+html {
     background-color: var(--background);
     font-family: 'Poppins';
     color: var(--plaintext);
@@ -17,7 +17,16 @@ html,body {
     overflow-x: hidden;
 }
 
+body {
+    width: 100%;
+    min-height: inherit;
+    position: absolute;
+    margin: 0;
+}
+
 #navbar {
+    top:0;
+    position: absolute;
     background-color: var(--primary);
     width: 100%;
 }
@@ -40,17 +49,12 @@ html,body {
 }
 
 .landing {
-    padding: 1% 0;
+    padding: 5% 0;
+    margin: 5% 0;
+    position: relative;
     font-size: 1.5rem;
     color: var(--plaintext);
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    min-height: 100%;
-    top: 5%;
-    height: 100%;
-    left: 2%;
-    right: 2%;
+    top: 3%;
 }
 
 .landing h1, h3{
@@ -135,30 +139,26 @@ html,body {
 }
 
 .footer {
+    text-align: center;
+    padding: 10px 0;
     background-color: var(--primary);
-    padding: 10px;
     color: var(--secondary);
-    float:;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .about p {
     text-align: left;
 }
 
-.footer {
-    bottom: 0;
-    width: 100%;
-}
-
 .footer .links {
-    padding: 25px;
-    right: 0;
-    margin-left: auto;
-    float: right;
+    margin: 10px;
 }
 
 .footer .links img{
     padding: 5px;
+    vertical-align: middle;
 }
 
 .footer .footer-text {
@@ -166,12 +166,9 @@ html,body {
     vertical-align: middle;
 }
 
-.footer h6 {
-    text-align: center;
-}
-
-.container {
-    height: 100%;
+.footer a, .footer p{
+    color: var(--plaintext);
+    padding: 10px 0;
 }
 
 .container h3{
@@ -265,6 +262,7 @@ html,body {
     .landing{
         font-size: 1.25rem;
         left: 0;
+        margin: 5% 0 20% 0;
     }
 
     .landing-wrapper{
@@ -310,9 +308,8 @@ html,body {
     }
 
     .footer .links {
-        padding: 25px;
-        right: 0;
-        margin-left: auto;
+        margin: 5px 0;
+        padding: 5px 0;
     }
     
     .footer .footer-text {
@@ -320,8 +317,14 @@ html,body {
         padding: 15px;
     }
 
-    .footer p {
+    .footer p, .footer a {
         font-size: 0.7em;
+        padding: 5px 0;
+    }
+
+    
+    .container {
+        margin-bottom: 20%;
     }
 
     .card-wrapper .card-title h3, p {
